@@ -1,0 +1,53 @@
+<%- include('partials/head') %>
+
+    
+<div class="h-screen w-full bg-white relative flex overflow-hidden">
+    <%- include('partials/sidebar') %>
+      <div class="w-full h-full flex flex-col justify-between">
+        <header class="h-16 w-full flex items-center relative justify-end px-5 space-x-10 bg-gray-800">    
+            <%- include('partials/header') %> 
+        </header>
+        <main class="max-w-full h-full flex relative overflow-y-hidden">                      
+          <div class="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll" style="background-image: url('https://wallpapercave.com/wp/wp770761.jpg');">
+            <section id="about" data-aos="fade-down">
+              <div class="section-aniket">
+                <div class="container-aniket">
+                  <div class="title">
+                    <h1>About Us</h1>
+                  </div>
+                  <div class="image-section">
+        
+                    <img src="https://images.static-collegedunia.com/public/college_data/images/campusimage/147280328185.jpg" alt="">
+                  </div>
+                  <div class="content-section">
+                    <div class="content">
+                      <h3>Site that connects Seeker to keeper !</h3>
+                      <p> Thousands of students from all across the country live in the hostels in GLA University, which comes closest to being 'a home away from home'. GLA University provides well-furnished hostel facility to its outstation candidates. The campus hostels are surrounded by lush green lawns and playing fields. The separate facilities for boys and girls, caring wardens and a tight security ensures a pleasant stay allowing you to focus on your academics.  The hostels have complete power backup. Facilities for indoor games like TT, carom, chess, Television etc. are also available.
+                      </p>
+                      <br>
+                      <br>
+                      <div class="button">
+                        <a href="./About.html">Read More</a>
+                      </div>
+                    </div>
+                    <div class="social">
+                      <br>
+                      <!-- <a href=""><i class="fab fa-facebook-f"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+        
+            </section>
+        
+            <%- include('partials/foot') %>
+          </div>
+        </main>
+      </div>
+  </div>
+
+
+<%- include('partials/footer') %>

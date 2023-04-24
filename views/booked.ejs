@@ -1,0 +1,58 @@
+<%- include('partials/head') %>
+
+    
+<div class="h-screen w-full bg-white relative flex overflow-hidden">
+    <%- include('partials/sidebar') %>
+      <div class="w-full h-full flex flex-col justify-between">
+        <header class="h-16 w-full flex items-center relative justify-end px-5 space-x-10 bg-slate-900">    
+            <%- include('partials/header') %> 
+        </header>
+        <main class="max-w-full h-full flex relative overflow-y-hidden">                      
+          <div class=" bg-gradient-to-r from-slate-900 via-slate-600 to-slate-900 h-full w-full m-4 flex flex-wrap items-center justify-center rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
+            
+            <div class=" flex items-center justify-center    ">
+                <div class="w-auto h-full bg-gray-100  rounded-3xl shadow-2xl text-black border-2 border-gray-900 overflow-hidden" >
+                    <div class="md:flex ">
+                        <div class="h-14 object-cover  align-end md:block w-32 sm:w-fit bg-gray-700 text-white px-3 py-6 ">
+    <pre >You have booked the
+</pre>
+<br>
+                            <hr>
+                            <br>
+                            <ul class=" item-end justify-end">
+                            <li class="flex justify-end">name</li>
+                            <li class="flex justify-end">email</li>
+                            <li class="flex justify-end">room</li>
+                            <li class="flex justify-end">date</li>
+                            
+                          </ul>
+                        </div>
+                        <div class="w-1/2 md:w-1/2 px-3 py-6 text-black ">
+                            room the details are:
+                            <!-- Details Here: -->
+                            <br><br>
+                            <hr class="text-black">
+                            <br>
+                            <ul class="">
+                                
+                                <li><%= nameee %></li>
+                                <li><%= email %></li>
+                                <li><%= nub %></li>
+                                <li><%= date %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+            </div>
+        </main>
+      </div>
+  </div>
+
+
+
+
+
+<%- include('partials/footer') %>
